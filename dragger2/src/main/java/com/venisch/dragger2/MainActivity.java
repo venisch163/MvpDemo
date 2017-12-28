@@ -24,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     @Inject
-    public User mUser;
+    public User mUser;//每次注入都会产生一个新的实例
+
+    @Inject
+    public User mUser1;
 
     @Named("TypeOneParam")
     @Inject
@@ -56,7 +59,11 @@ public class MainActivity extends AppCompatActivity {
 
         DaggerFactoryActivity2Component.create().inject(this);
         if (mUser != null) {
-            Log.d(TAG, "1111");
+            Log.d(TAG, mUser.toString());
+        }
+
+        if (mUser1 != null) {
+            Log.d(TAG, mUser1.toString());
         }
 
         if (mUser2A != null) {
@@ -74,5 +81,8 @@ public class MainActivity extends AppCompatActivity {
         if (mUser2 != null) {
             Log.d(TAG, mUser2.toString());
         }
+
+
     }
+
 }

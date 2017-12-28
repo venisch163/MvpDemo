@@ -3,6 +3,8 @@ package com.venisch.dragger2.component;
 import com.venisch.dragger2.MainActivity;
 import com.venisch.dragger2.module.UserModule;
 
+import javax.inject.Singleton;
+
 import dagger.Component;
 
 /**
@@ -10,7 +12,8 @@ import dagger.Component;
  * 申明将依赖注入到的目标位置
  */
 
+//@Singleton
 @Component(modules = UserModule.class)
-public interface FactoryActivity2Component {
+public interface FactoryActivity2Component{
     void inject(MainActivity activity);
 }

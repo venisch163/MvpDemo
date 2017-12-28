@@ -5,6 +5,8 @@ import com.venisch.dragger2.model.User;
 import com.venisch.dragger2.model.User2;
 
 import javax.inject.Named;
+import javax.inject.Scope;
+import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
@@ -15,11 +17,14 @@ import dagger.Provides;
  * 使用Module模式时被依赖类可以不必添加Inject注解
  *
  * @Named 用于区分传递给被依赖类的参数类型
- */
+ *
+ * @Singleton 用于同一个Component域的单例，继承自 @Scope */
 
 @Module
 public class UserModule {
 
+
+//    @Singleton
     @Provides
     public User provideUser() {
         return new User();

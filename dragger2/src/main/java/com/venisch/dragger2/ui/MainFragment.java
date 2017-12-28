@@ -53,9 +53,5 @@ public class MainFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-//        if(mUser!=null){
-//            Log.d(TAG,mUser.toString());
-//            mTvData.setText(mUser.toString());
-//        }
     }
 }
