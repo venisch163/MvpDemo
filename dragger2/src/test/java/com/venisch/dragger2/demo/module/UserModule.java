@@ -1,4 +1,4 @@
-//package com.venisch.dragger2.module;
+//package com.venisch.dragger2.demo.module;
 //
 //import com.venisch.dragger2.DaggerTest;
 //

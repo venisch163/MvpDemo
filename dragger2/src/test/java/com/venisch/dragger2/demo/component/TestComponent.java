@@ -1,7 +1,6 @@
-package com.venisch.dragger2.component;
+package com.venisch.dragger2.demo.component;
 
 import com.venisch.dragger2.DaggerTest;
-import com.venisch.dragger2.MainActivity;
 
 import dagger.Component;
 

@@ -1,12 +1,11 @@
-package com.venisch.dragger2.module;
+package com.venisch.dragger2.demo.module;
 
-import com.venisch.dragger2.annotation.DaggerParamType;
-import com.venisch.dragger2.model.User;
-import com.venisch.dragger2.model.User2;
+
+import com.venisch.dragger2.demo.annotation.DaggerParamType;
+import com.venisch.dragger2.demo.model.User;
+import com.venisch.dragger2.demo.model.User2;
 
 import javax.inject.Named;
-import javax.inject.Scope;
-import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;

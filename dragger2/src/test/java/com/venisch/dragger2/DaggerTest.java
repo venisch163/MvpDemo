@@ -1,6 +1,6 @@
 package com.venisch.dragger2;
 
-import com.venisch.dragger2.model.User;
+import com.venisch.dragger2.demo.model.User;
 
 import org.junit.Test;
 
@@ -22,7 +22,7 @@ public class DaggerTest {
 //        if(user!=null){
 //            user =
 //        }
-        
+
         System.out.println("DaggerTest.testDagger >> \n");
     }
 }

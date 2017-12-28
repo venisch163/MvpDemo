@@ -1,8 +1,4 @@
-package com.venisch.dragger2.component;
-
-import com.venisch.dragger2.MainActivity;
-
-import dagger.Component;
+package com.venisch.dragger2.demo.component;
 
 /**
  * Created by shenwenjie on 2017/12/28.
@@ -11,5 +7,5 @@ import dagger.Component;
 
 //@Component
 //public interface FactoryActivityComponent {
-//    void inject(MainActivity activity);
+//    void inject(TestActivity activity);
 //}

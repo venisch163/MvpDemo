@@ -1,9 +1,7 @@
-package com.venisch.dragger2.component;
+package com.venisch.dragger2.demo.component;
 
-import com.venisch.dragger2.MainActivity;
-import com.venisch.dragger2.module.UserModule;
-
-import javax.inject.Singleton;
+import com.venisch.dragger2.demo.TestActivity;
+import com.venisch.dragger2.demo.module.UserModule;
 
 import dagger.Component;
 
@@ -15,5 +13,5 @@ import dagger.Component;
 //@Singleton
 @Component(modules = UserModule.class)
 public interface FactoryActivity2Component{
-    void inject(MainActivity activity);
+    void inject(TestActivity activity);
 }

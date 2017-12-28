@@ -1,4 +1,4 @@
-package com.venisch.dragger2.annotation;
+package com.venisch.dragger2.demo.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;

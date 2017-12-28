@@ -1,4 +1,4 @@
-package com.venisch.dragger2.model;
+package com.venisch.dragger2.demo.model;
 
 import android.util.Log;
 

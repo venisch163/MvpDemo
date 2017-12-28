@@ -1,6 +1,4 @@
-package com.venisch.dragger2.model;
-
-import javax.inject.Inject;
+package com.venisch.dragger2.demo.model;
 
 /**
  * Created by shenwenjie on 2017/12/28.
