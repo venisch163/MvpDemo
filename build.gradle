@@ -12,6 +12,7 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+
     }
 }
 
@@ -24,4 +25,12 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext{
+    COMPILESDKVERSION = 26
+    BUILDTOOLSVERSION = "26.0.2"
+    MINSDKVERSION = 14
+    TARGETSDKVERSION = 26
+    SUPPORTVERSION = "25.0.0"
 }
