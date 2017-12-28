@@ -1,5 +1,6 @@
 package com.venisch.dragger2.module;
 
+import com.venisch.dragger2.annotation.DaggerParamType;
 import com.venisch.dragger2.model.User;
 import com.venisch.dragger2.model.User2;
 
@@ -36,4 +37,16 @@ public class UserModule {
         return new User2("david",20);
     }
 
+    @Named("TypeTwoParam2")
+    @Provides
+    public User2 provideUser2B2(){
+        return new User2("jack",18);
+    }
+
+    @DaggerParamType
+    @Provides
+    public User2 providerUser2(){
+        return new User2();
+
+    }
 }
