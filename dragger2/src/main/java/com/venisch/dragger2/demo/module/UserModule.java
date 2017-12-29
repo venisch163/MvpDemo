@@ -1,7 +1,7 @@
 package com.venisch.dragger2.demo.module;
 
 
-import com.venisch.dragger2.demo.annotation.DaggerParamType;
+import com.venisch.dragger2.annotation.DaggerParamType;
 import com.venisch.dragger2.demo.model.User;
 import com.venisch.dragger2.demo.model.User2;
 

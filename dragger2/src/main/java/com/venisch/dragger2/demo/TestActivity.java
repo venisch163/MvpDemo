@@ -5,8 +5,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.venisch.dragger2.App;
 import com.venisch.dragger2.R;
-import com.venisch.dragger2.demo.annotation.DaggerParamType;
+import com.venisch.dragger2.annotation.DaggerParamType;
 import com.venisch.dragger2.demo.component.DaggerFactoryActivity2Component;
 import com.venisch.dragger2.demo.model.User;
 import com.venisch.dragger2.demo.model.User2;
@@ -83,7 +84,7 @@ public class TestActivity extends AppCompatActivity {
             Log.d(TAG, mUser2.toString());
         }
 
-
+        Log.d(TAG, ((App)getApplication()).getmAppBean().toString());
     }
 
 }
