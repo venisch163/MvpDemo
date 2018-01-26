@@ -1,11 +1,19 @@
-apply plugin: 'com.android.application'
+if(standAlone.toBoolean()){
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
 
 android {
     compileSdkVersion rootProject.ext.COMPILESDKVERSION
     buildToolsVersion rootProject.ext.BUILDTOOLSVERSION
 
     defaultConfig {
-        applicationId "com.venisch.mvp"
+
+        if(standAlone.toBoolean()){
+            applicationId "com.venisch.mvp"
+        }
         minSdkVersion rootProject.ext.MINSDKVERSION
         targetSdkVersion rootProject.ext.TARGETSDKVERSION
         versionCode 1

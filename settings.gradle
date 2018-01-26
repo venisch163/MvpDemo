@@ -1,1 +1,3 @@
-include ':mvp', ':dragger2'
+include ':mvp'
+include ':dragger2'
+include ':lifecycle'
