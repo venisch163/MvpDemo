@@ -8,9 +8,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android-async" />
             <option value="$PROJECT_DIR$/dragger2" />
+            <option value="$PROJECT_DIR$/greendao" />
             <option value="$PROJECT_DIR$/lifecycle" />
             <option value="$PROJECT_DIR$/mvp" />
+            <option value="$PROJECT_DIR$/rxandroid" />
+            <option value="$PROJECT_DIR$/socketio" />
+            <option value="$PROJECT_DIR$/verticalscoll" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

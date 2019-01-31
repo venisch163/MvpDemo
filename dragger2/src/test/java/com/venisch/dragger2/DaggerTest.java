@@ -1,6 +1,5 @@
 package com.venisch.dragger2;
 
-import com.venisch.dragger2.demo.model.User;
 
 import org.junit.Test;
 
@@ -13,8 +12,6 @@ import javax.inject.Inject;
 public class DaggerTest {
 
 
-    @Inject
-    User user;
 
     @Test
     public void testDagger(){

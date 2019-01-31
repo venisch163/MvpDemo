@@ -3,7 +3,7 @@ if(standAlone.toBoolean()){
 } else {
     apply plugin: 'com.android.library'
 }
-apply plugin: 'org.greenrobot.greendao' // apply plugin
+
 
 android {
     compileSdkVersion rootProject.ext.COMPILESDKVERSION
@@ -11,9 +11,8 @@ android {
 
     defaultConfig {
 
-
         if(standAlone.toBoolean()){
-            applicationId "com.venisch.greendao"
+            applicationId "com.venisch.verticalscoll"
         }
         minSdkVersion rootProject.ext.MINSDKVERSION
         targetSdkVersion rootProject.ext.TARGETSDKVERSION
@@ -33,12 +32,6 @@ android {
     }
 }
 
-greendao {
-    schemaVersion 1
-    daoPackage 'com.jdcf.greendao.gen'
-    targetGenDir 'src/main/java'
-}
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -50,5 +43,5 @@ dependencies {
 
     // rxjava
     implementation "io.reactivex.rxjava2:rxjava:2.1.0"
-    compile 'org.greenrobot:greendao:3.2.0'
+    implementation "com.google.code.gson:gson:2.8.2"
 }

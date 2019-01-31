@@ -75,6 +75,7 @@ public class SocketIoActivity extends AppCompatActivity {
                     Log.d(TAG,"EVENT_MESSAGE 收到消息了");
                 }
             });
+            //自定义的事件key
             mSocket.on("broadcast", new Emitter.Listener() {
                 @Override
                 public void call(Object... args) {
